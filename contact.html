@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://kit.fontawesome.com/1c6f372d11.js" crossorigin="anonymous"></script>
+    <title>Contact</title>
 </head>
+
 <body>
 
     <!-- nav top of page (sticky) -->
@@ -27,16 +31,43 @@
     <header>
         <div class="wrapper">
             <div class="imageContainer">
-                <img src="./assets/blog-image-1.jpg" alt="Sophie standing in front of a yellow wall facing to the right.">
+                <img src="./assets/blog-image-1.jpg"
+                    alt="Sophie standing in front of a yellow wall facing to the right.">
             </div>
             <h1>Blog</h1>
         </div>
     </header>
 
-    <!-- aside? or just a div next to the form? -->
+    <main>
+        <div class="wrapper">
 
-    <!-- form -->
-    
+            <aside> <!-- could be a section or div??? -->
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+                <p>info@email.com</p>
+                <p>123-456-7890<br>123 Queen Street West, Unit 10<br>Toronto, Ontario<br>M5V2D5</p>
+            </aside>
+
+            <!-- contact form -->
+            <form action="submit" class="contactForm" name="contactForm">
+                <label for="name" class="sr-only">Name</label>
+                <input type="text" id="name" placeholder="Name">
+
+                <label for="email" class="sr-only">Email</label>
+                <input type="email" id="email" placeholder="Email">
+
+                <label for="message" class="sr-only">Message</label>
+                <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
+
+                <button type="submit">submit</button>
+            </form>
+        </div> <!-- .wrapper ends -->
+    </main>
+
     <!-- footer -->
     <footer>
         <div class="wrapper">
@@ -45,4 +76,5 @@
     </footer>
 
 </body>
+
 </html>
