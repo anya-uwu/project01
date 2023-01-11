@@ -98,16 +98,37 @@
                     non minima laboriosam laborum dolores, eum est suscipit possimus blanditiis accusantium, nisi,
                     aliquam iure molestias?
                 </p>
-                <!-- comments?? -->
-                <div>
-                    
-                </div>
+                <!-- comments -->
+                <div class="comment">
+                    <div class="imageContainer">
+                        <img src="./assets/blog-image-3.jpg" alt="user profile picture">
+                    </div>
+                    <p>Tuesday October 9th, 2018 by Jeremy</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quas suscipit rerum ab, nisi iste facere iusto dolore, consequatur laborum iure! Error esse beatae culpa odit fugiat ea excepturi suscipit!</p>
+                </div> <!-- .comment ends -->
 
-
+                <div class="comment">
+                    <div class="imageContainer">
+                        <img src="./assets/blog-image-4.jpg" alt="user profile picture">
+                    </div>
+                    <p>Wednesday October 10th, 2018 by Julia</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quas suscipit rerum ab, nisi iste facere iusto dolore, consequatur laborum iure! Error esse beatae culpa odit fugiat ea excepturi suscipit!</p>
+                </div> <!-- .comment ends -->
             </article>
 
             <!-- comment form -->
+            <form action="submit" class="commentForm" name="contactForm">
+                <label for="name" class="sr-only">Name</label>
+                <input type="text" id="name" placeholder="Name">
 
+                <label for="email" class="sr-only">Email</label>
+                <input type="email" id="email" placeholder="Email">
+
+                <label for="comment" class="sr-only">Comment</label>
+                <textarea name="comment" id="comment" placeholder="Comment" cols="30" rows="10"></textarea>
+
+                <button type="submit">post comment</button>
+            </form>
         </div> <!-- .wrapper ends -->
     </main>
 
@@ -119,5 +140,4 @@
     </footer>
 
 </body>
-
 </html>
