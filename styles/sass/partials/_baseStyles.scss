@@ -4,8 +4,15 @@
 
 // wrapper
 
-// .wrapper {
-//     width: 80px;
-//     max-width: 1080px;
-//     margin: 0 auto;
-// }
+.wrapper {
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+button {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 32px;
+    letter-spacing: 1px;
+}

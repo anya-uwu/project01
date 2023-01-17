@@ -226,6 +226,19 @@ html {
   overflow: hidden;
 }
 
+.wrapper {
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+button {
+  font-size: 1rem;
+  text-align: center;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+
 /* font size px to rem conversions
 20px = 1rem
 24px = 1.2rem
@@ -242,6 +255,7 @@ body {
   color: #2c2c2c;
   font-size: 1rem;
   line-height: 32px;
+  letter-spacing: 0px;
 }
 
 h1, h2, h3, .middleNav a, h4 {
@@ -268,5 +282,12 @@ h3, .middleNav a {
 
 h4 {
   font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.topNav a {
+  font-size: 1rem;
+  text-align: right;
+  line-height: 29px;
   letter-spacing: 1px;
 }

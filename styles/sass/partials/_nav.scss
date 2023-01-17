@@ -5,3 +5,11 @@
 
 // change the way I wrote the nav html? 
 // instead of two ul make one ul and style the sophie header by targeting the child
+
+// setting top nav typography
+.topNav a {
+    font-size: 1rem;
+    text-align: right;
+    line-height: 29px;
+    letter-spacing: 1px;
+}
