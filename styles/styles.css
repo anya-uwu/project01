@@ -327,21 +327,30 @@ h4 {
   z-index: 10;
   background-color: #f6a823;
 }
-.topNav .wrapper {
+.topNav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -ms-flex-item-align: center;
       align-self: center;
+  padding: 30px 0;
+}
+.topNav ul li:nth-child(3) {
+  font-size: 2.1rem;
+  font-family: "Lora", serif;
 }
 .topNav a:hover {
   color: rgb(246, 246, 246);
 }
 .topNav a:focus {
   color: rgb(246, 246, 246);
+}
+
+.home {
+  background-color: #f6a823;
 }
 
 .middleNav ul {
