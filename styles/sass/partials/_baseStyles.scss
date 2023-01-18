@@ -10,9 +10,37 @@
     margin: 0 auto;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
 button {
     font-size: 1rem;
+    font-weight: bold;
     text-align: center;
+    text-transform: uppercase;
     line-height: 32px;
     letter-spacing: 1px;
+    color: $blackShade;
+    background-color: $accent;
+    border: none;
+    &:hover {
+        color: $white;
+    }
+    &:focus {
+        color: $white;
+    }
+}
+
+// stripping base ul styles
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: $blackShade;
+    text-decoration: none;
 }

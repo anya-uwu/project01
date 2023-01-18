@@ -56,7 +56,11 @@ h4 {
 }
 
 .topNav li {
+    font-size: 1rem;
     line-height: 29px;
     letter-spacing: 1px;
+    a {
+        text-align: right;
+    }
 }
 

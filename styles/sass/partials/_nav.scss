@@ -7,9 +7,29 @@
 // instead of two ul make one ul and style the sophie header by targeting the child
 
 // setting top nav typography
-.topNav a {
-    font-size: 1rem;
-    text-align: right;
-    line-height: 29px;
-    letter-spacing: 1px;
+
+// remove list styles here or overall
+
+.topNav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: $primary;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+    }
+
+    a {
+        &:hover {
+            color: $white;
+        }
+
+        &:focus {
+            color: $white;
+        }
+    }
 }
+
+

@@ -232,11 +232,38 @@ html {
   margin: 0 auto;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 button {
   font-size: 1rem;
+  font-weight: bold;
   text-align: center;
+  text-transform: uppercase;
   line-height: 32px;
   letter-spacing: 1px;
+  color: #2c2c2c;
+  background-color: #05afc1;
+  border: none;
+}
+button:hover {
+  color: rgb(246, 246, 246);
+}
+button:focus {
+  color: rgb(246, 246, 246);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #2c2c2c;
+  text-decoration: none;
 }
 
 /* font size px to rem conversions
@@ -286,13 +313,38 @@ h4 {
 }
 
 .topNav li {
+  font-size: 1rem;
   line-height: 29px;
   letter-spacing: 1px;
 }
-
-.topNav a {
-  font-size: 1rem;
+.topNav li a {
   text-align: right;
-  line-height: 29px;
-  letter-spacing: 1px;
+}
+
+.topNav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #f6a823;
+}
+.topNav .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.topNav a:hover {
+  color: rgb(246, 246, 246);
+}
+.topNav a:focus {
+  color: rgb(246, 246, 246);
+}
+
+.middleNav ul {
+  list-style: none;
+  padding: 0;
 }
