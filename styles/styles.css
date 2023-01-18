@@ -353,6 +353,35 @@ h4 {
   background-color: #f6a823;
 }
 
+.flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.flexContainer .imageContainer {
+  position: relative;
+  top: 50px;
+  -webkit-box-shadow: 15px 15px 1px rgb(246, 246, 246);
+          box-shadow: 15px 15px 1px rgb(246, 246, 246);
+}
+.flexContainer h1 {
+  font-size: 6rem;
+}
+
+.headerText {
+  position: relative;
+}
+.headerText img {
+  position: absolute;
+  top: -10px;
+  left: -75px;
+}
+
 .middleNav ul {
   list-style: none;
   padding: 0;
