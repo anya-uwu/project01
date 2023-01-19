@@ -1,33 +1,36 @@
 // home page header styles
 .home {
     background-color: $primary;
-}
 
-.flexContainer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    // adding drop shadow to header image
-    .imageContainer {
-        position: relative;
-        top: 50px;
-        box-shadow: 15px 15px 1px $white;
-    }
+    .flexContainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
 
-    h1 {
-        font-size: 6rem;
+        // adding drop shadow to header image
+        .imageContainer {
+            position: relative;
+            top: 50px;
+            box-shadow: 15px 15px $white;
+        }
+
+        h1 {
+            font-size: 6rem;
+        }
     }
 }
 
 // positioning the image with the text "its all about"
 .headerText {
     position: relative;
+
     img {
         position: absolute;
-            top: -10px;
-            left: -75px;
+        top: -75px;
+        left: -75px;
     }
 }
 
 
 // blog and contact header styles
+// make header image centered and flex

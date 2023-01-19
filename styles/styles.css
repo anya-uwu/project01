@@ -261,7 +261,7 @@ ul {
   margin: 0;
 }
 
-a {
+a, i {
   color: #2c2c2c;
   text-decoration: none;
 }
@@ -283,6 +283,10 @@ body {
   font-size: 1rem;
   line-height: 32px;
   letter-spacing: 0px;
+}
+
+h1, h2, h3, p {
+  margin: 0;
 }
 
 h1, h2, h3, .middleNav a, h4, .topNav li {
@@ -352,8 +356,7 @@ h4 {
 .home {
   background-color: #f6a823;
 }
-
-.flexContainer {
+.home .flexContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -363,13 +366,13 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
 }
-.flexContainer .imageContainer {
+.home .flexContainer .imageContainer {
   position: relative;
   top: 50px;
-  -webkit-box-shadow: 15px 15px 1px rgb(246, 246, 246);
-          box-shadow: 15px 15px 1px rgb(246, 246, 246);
+  -webkit-box-shadow: 15px 15px rgb(246, 246, 246);
+          box-shadow: 15px 15px rgb(246, 246, 246);
 }
-.flexContainer h1 {
+.home .flexContainer h1 {
   font-size: 6rem;
 }
 
@@ -378,11 +381,67 @@ h4 {
 }
 .headerText img {
   position: absolute;
-  top: -10px;
+  top: -75px;
   left: -75px;
 }
 
+.whoIsSophie {
+  background-color: #f0efed;
+}
+
+.aboutSophie .flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.aboutSophie .imageContainer {
+  width: 50%;
+}
+.aboutSophie .textContainer {
+  width: 50%;
+}
+
+.red {
+  -webkit-box-shadow: -100px 16px #a82706;
+          box-shadow: -100px 16px #a82706;
+}
+
+.yellow {
+  -webkit-box-shadow: 100px 16px #f6a823;
+          box-shadow: 100px 16px #f6a823;
+}
+
+.middleNav {
+  background-color: #f0efed;
+  padding: 50px 0;
+}
 .middleNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
   padding: 0;
+}
+.middleNav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+.middleNav ul li i {
+  font-size: 1rem;
+  text-align: center;
+  background-color: #f6a823;
+  padding: 25px 0;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.sophiesJourney {
+  background-color: #f0efed;
 }

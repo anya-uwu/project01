@@ -1,4 +1,65 @@
-.middleNav ul {
-    list-style: none;
-    padding: 0;
+// who is sophie section
+.whoIsSophie {
+    background-color: $whiteShade;
 }
+
+// sophies favourite things and travels section
+.aboutSophie {
+    .flexContainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .imageContainer {
+        width: 50%;
+    }
+
+    .textContainer {
+        width: 50%;
+    }
+}
+
+.red {
+    box-shadow: -100px 16px $secondary;
+}
+
+.yellow {
+    box-shadow: 100px 16px $primary;
+}
+
+// photos, about, blog, get in touch section
+
+.middleNav {
+    background-color: $whiteShade;
+    padding: 50px 0;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        li {
+            display: flex;
+            width: 50%;
+            i {
+                font-size: 1rem;
+                text-align: center;
+                background-color: $primary;
+                padding: 25px 0;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+
+
+// decorative image
+
+// sophies journey
+.sophiesJourney {
+    background-color: $whiteShade;
+}
+
+// image gallery
