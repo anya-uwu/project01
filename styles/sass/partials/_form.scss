@@ -3,11 +3,33 @@
 form {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     .flexContainer {
         display: flex;
+        justify-content: space-between;
     }
 
+    input {
+        border: none;
+        width: calc(100%/2 - 10px);
+        display: inline-block;
+        margin-right: 10px;
+        padding: 20px 0 20px 20px;
+    }
+
+    input::placeholder, textarea::placeholder {
+        font-style: italic;
+        margin-left: 10px;
+    }
+
+    input[type=email] {
+        margin-right: 0;
+    }
+    
     textarea {
         resize: none;
+        border: none;
+        padding: 30px 0 0 20px;
+        margin: 20px 0;
     }
 }
