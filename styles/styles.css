@@ -385,6 +385,10 @@ h4 {
   left: -75px;
 }
 
+section p {
+  padding: 20px 0;
+}
+
 .whoIsSophie {
   background-color: #f0efed;
   padding: 60px 0;
@@ -442,6 +446,9 @@ h4 {
   width: 50px;
   border-radius: 50%;
 }
+.middleNav ul li p {
+  padding: 20px 0;
+}
 
 .decorImg {
   width: 100vw;
@@ -461,6 +468,22 @@ h4 {
 .sophiesJourney .textContainer {
   width: 70%;
   padding-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.sophiesJourney .textContainer button {
+  display: inline;
 }
 .sophiesJourney .imageContainer {
   width: 30%;
@@ -490,4 +513,37 @@ footer {
 footer p {
   color: rgb(246, 246, 246);
   text-align: center;
+}
+
+.contact {
+  background-color: #f0efed;
+}
+.contact .flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact aside {
+  width: 33.3333333333%;
+}
+.contact form {
+  width: 66.6666666667%;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+form .flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+form textarea {
+  resize: none;
 }

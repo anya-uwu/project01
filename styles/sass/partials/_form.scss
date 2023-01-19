@@ -1,1 +1,13 @@
 // remove default form styles
+
+form {
+    display: flex;
+    flex-direction: column;
+    .flexContainer {
+        display: flex;
+    }
+
+    textarea {
+        resize: none;
+    }
+}
