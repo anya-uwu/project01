@@ -173,3 +173,32 @@ footer {
 }
 
 // blog sections
+.blog {
+    background-color: $whiteShade;
+    .flexContainer {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    aside {
+        width: calc(100%/3);
+        section {
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 30px;
+            margin-right: 30px;
+        }
+    }
+
+    section {
+        background-color: white;
+    }
+
+    .blogPost {
+        width: calc((100%/3)*2);
+        article {
+            background-color: white;
+        }
+    }
+}
+

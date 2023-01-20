@@ -569,6 +569,36 @@ footer p {
   width: 66.6666666667%;
 }
 
+.blog {
+  background-color: #f0efed;
+}
+.blog .flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.blog aside {
+  width: 33.3333333333%;
+}
+.blog aside section {
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 30px;
+  margin-right: 30px;
+}
+.blog section {
+  background-color: white;
+}
+.blog .blogPost {
+  width: 66.6666666667%;
+}
+.blog .blogPost article {
+  background-color: white;
+}
+
 form {
   display: -webkit-box;
   display: -ms-flexbox;
