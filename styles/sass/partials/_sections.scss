@@ -135,7 +135,7 @@ footer {
 // contact section
 .contact {
     background-color: $whiteShade;
-    padding: 60px 0;
+    padding-bottom: 60px;
     // height: 60vh;
     .flexContainer {
         display: flex;
@@ -159,7 +159,7 @@ footer {
             width: calc(100%/4 - 20px);
             margin-right: 20px;
         }
-        
+
         ul {
             display: flex;
             flex-direction: row;

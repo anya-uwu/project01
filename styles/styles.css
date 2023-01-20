@@ -386,6 +386,14 @@ h4 {
   left: -75px;
 }
 
+.blog {
+  background-color: #f0efed;
+}
+.blog .wrapper {
+  position: relative;
+  top: -50px;
+}
+
 section p {
   padding: 20px 0;
 }
@@ -521,7 +529,7 @@ footer p {
 
 .contact {
   background-color: #f0efed;
-  padding: 60px 0;
+  padding-bottom: 60px;
 }
 .contact .flexContainer {
   display: -webkit-box;
