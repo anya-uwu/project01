@@ -227,14 +227,34 @@ footer {
             background-color: white;
             margin-bottom: 25px;
             padding: 30px;
+            h3 {
+                padding-bottom: 10px;
+            }
+        }
+
+        article:first-child {
+            border-bottom: 5px solid $primary;
         }
 
         form {
             margin-bottom: 40px;
         }
 
+        .date {
+            font-style: italic;
+            font-weight: bold;
+            color: $tertiary;
+            padding-bottom: 10px;
+
+            span {
+                font-weight: normal;
+                color: $blackShade;
+            }
+        }
+
         .comment {
             display: flex;
+            flex-direction: row;
 
             .imageContainer {
                 width: 20%;
@@ -242,6 +262,10 @@ footer {
 
             .textContainer {
                 width: 80%;
+            }
+
+            .date {
+                padding-bottom: 5px;
             }
         }
     }

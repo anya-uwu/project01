@@ -615,19 +615,42 @@ footer p {
   margin-bottom: 25px;
   padding: 30px;
 }
+.blog .blogPost article h3 {
+  padding-bottom: 10px;
+}
+.blog .blogPost article:first-child {
+  border-bottom: 5px solid #f6a823;
+}
 .blog .blogPost form {
   margin-bottom: 40px;
+}
+.blog .blogPost .date {
+  font-style: italic;
+  font-weight: bold;
+  color: #285e64;
+  padding-bottom: 10px;
+}
+.blog .blogPost .date span {
+  font-weight: normal;
+  color: #2c2c2c;
 }
 .blog .blogPost .comment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .blog .blogPost .comment .imageContainer {
   width: 20%;
 }
 .blog .blogPost .comment .textContainer {
   width: 80%;
+}
+.blog .blogPost .comment .date {
+  padding-bottom: 5px;
 }
 
 form {
