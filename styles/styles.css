@@ -621,6 +621,9 @@ footer p {
 .blog .blogPost article:first-child {
   border-bottom: 5px solid #f6a823;
 }
+.blog .blogPost article:nth-last-child(2) {
+  border-bottom: 5px solid #f6a823;
+}
 .blog .blogPost form {
   margin-bottom: 40px;
 }
@@ -651,6 +654,10 @@ footer p {
 }
 .blog .blogPost .comment .date {
   padding-bottom: 5px;
+}
+.blog .blogPost .commentForm {
+  background-color: #f0efed;
+  padding: 0;
 }
 
 form {

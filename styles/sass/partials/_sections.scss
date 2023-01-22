@@ -227,12 +227,17 @@ footer {
             background-color: white;
             margin-bottom: 25px;
             padding: 30px;
+
             h3 {
                 padding-bottom: 10px;
             }
         }
 
         article:first-child {
+            border-bottom: 5px solid $primary;
+        }
+
+        article:nth-last-child(2) {
             border-bottom: 5px solid $primary;
         }
 
@@ -267,6 +272,11 @@ footer {
             .date {
                 padding-bottom: 5px;
             }
+        }
+
+        .commentForm {
+            background-color: $whiteShade;
+            padding: 0;
         }
     }
 }
