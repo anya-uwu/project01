@@ -28,11 +28,13 @@ section p {
 }
 
 .red {
-    box-shadow: -100px 16px $secondary;
+    background-color: $secondary;
+    width: 50%;
 }
 
 .yellow {
-    box-shadow: 100px 16px $primary;
+    background-color: $primary;
+    width: 50%;
 }
 
 // photos, about, blog, get in touch section
@@ -106,6 +108,9 @@ section p {
             box-shadow: 15px 15px $primary;
         }
     }
+
+    // change wrapper settings for divs holding the images and not the image itself?
+    // how to make dive ignore the wrapper but images and text still follow the wrapper?
 
 }
 

@@ -227,7 +227,7 @@ html {
 }
 
 .wrapper {
-  width: 80%;
+  width: 90%;
   max-width: 1080px;
   margin: 0 auto;
 }
@@ -418,13 +418,13 @@ section p {
 }
 
 .red {
-  -webkit-box-shadow: -100px 16px #a82706;
-          box-shadow: -100px 16px #a82706;
+  background-color: #a82706;
+  width: 50%;
 }
 
 .yellow {
-  -webkit-box-shadow: 100px 16px #f6a823;
-          box-shadow: 100px 16px #f6a823;
+  background-color: #f6a823;
+  width: 50%;
 }
 
 .middleNav {
