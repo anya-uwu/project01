@@ -412,15 +412,30 @@ section p {
 }
 .aboutSophie .imageContainer {
   width: 50%;
+  padding: 20px 0;
+}
+.aboutSophie .imageContainer .red {
+  border: 20px solid #a82706;
+}
+.aboutSophie .imageContainer .yellow {
+  border: 20px solid #f6a823;
 }
 .aboutSophie .textContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 50%;
-}
-
-.redBox {
-  background: #a82706;
-  width: 50vw;
-  height: 50%;
+  padding: 10px 50px;
 }
 
 .middleNav {
@@ -440,7 +455,15 @@ section p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(50% - 20px);
+  margin-right: 20px;
+}
+.middleNav ul li .textContainer {
+  padding-top: 10px;
+  padding-left: 15px;
 }
 .middleNav ul li i {
   font-size: 1rem;
@@ -453,6 +476,9 @@ section p {
 }
 .middleNav ul li p {
   padding: 20px 0;
+}
+.middleNav ul li:nth-child(2n) {
+  margin-right: 0;
 }
 
 .decorImg {

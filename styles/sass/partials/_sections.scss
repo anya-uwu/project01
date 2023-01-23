@@ -12,6 +12,7 @@ section p {
 }
 
 // sophies favourite things and travels section
+// I couldn't figure out how to match the design in the example so I modified it so the website could be complete
 .aboutSophie {
     .flexContainer {
         display: flex;
@@ -20,20 +21,26 @@ section p {
 
     .imageContainer {
         width: 50%;
+        padding: 20px 0;
+
+        .red {
+            border: 20px solid $secondary;
+        }
+
+        .yellow {
+            border: 20px solid $primary;
+        }
     }
 
     .textContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
         width: 50%;
+        padding: 10px 50px;
     }
 }
-
-.redBox {
-    background: $secondary;
-    width: 50vw;
-    height: 50%;
-}
-
-
 
 // photos, about, blog, get in touch section
 .middleNav {
@@ -48,7 +55,14 @@ section p {
 
         li {
             display: flex;
-            width: 50%;
+            justify-content: space-between;
+            width: calc(100% / 2 - 20px);
+            margin-right: 20px;
+
+            .textContainer {
+                padding-top: 10px;
+                padding-left: 15px;
+            }
 
             i {
                 font-size: 1rem;
@@ -63,6 +77,10 @@ section p {
             p {
                 padding: 20px 0;
             }
+        }
+
+        li:nth-child(2n) {
+            margin-right: 0;
         }
     }
 }
