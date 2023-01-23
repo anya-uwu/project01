@@ -435,7 +435,16 @@ section p {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 50%;
-  padding: 10px 50px;
+}
+.aboutSophie .faves {
+  padding-left: 50px;
+}
+.aboutSophie .travels {
+  padding-right: 50px;
+  text-align: right;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .middleNav {
