@@ -417,14 +417,10 @@ section p {
   width: 50%;
 }
 
-.red {
-  -webkit-box-shadow: -100px 16px #a82706;
-          box-shadow: -100px 16px #a82706;
-}
-
-.yellow {
-  -webkit-box-shadow: 100px 16px #f6a823;
-          box-shadow: 100px 16px #f6a823;
+.redBox {
+  background: #a82706;
+  width: 50vw;
+  height: 50%;
 }
 
 .middleNav {
