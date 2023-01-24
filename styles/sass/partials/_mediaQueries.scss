@@ -71,7 +71,7 @@
                 }
 
                 img {
-                    top: -20px;
+                    top: -40px;
                     left: -45px;
                     scale: 35%;
                 }
@@ -87,7 +87,43 @@
     }
 
     //section styles
-    .aboutSophie {}
+
+    .whoIsSophie {
+        padding: 30px 0;
+    }
+
+    .aboutSophie {
+
+        .wrapper {
+            margin: 0;
+            width: 100%;
+        }
+
+        .flexContainer {
+            flex-wrap: wrap;
+        }
+
+        .imageContainer {
+            width: 100%;
+            padding: 0;
+        }
+
+        .textContainer {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .faves {
+            padding: 0;
+        }
+
+        .travels {
+            padding: 0;
+            text-align: left;
+            align-items: flex-start;
+            order: +1;
+        }
+    }
 
     // blog & contact page header
 
@@ -114,6 +150,7 @@
 
     // blog page
     .blog {
+
         // blog and contact page header
         h1 {
             font-size: 2rem;
@@ -125,12 +162,13 @@
 
         .flexContainer {
             flex-wrap: wrap;
-            
+
         }
 
         aside {
             width: 100%;
             margin: 0;
+
             section {
                 margin-right: 0;
                 padding: 20px
@@ -140,14 +178,13 @@
         .blogPost {
             width: 100%;
             margin: 0;
+
             article {
                 padding: 20px;
                 margin-bottom: 15px;
             }
         }
     }
-
-
 
     // contact page
     .contact {

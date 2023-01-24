@@ -814,13 +814,45 @@ form textarea {
     font-size: 2rem;
   }
   .home .flexContainer .headerText img {
-    top: -20px;
+    top: -40px;
     left: -45px;
     scale: 35%;
   }
   .home .wrapper {
     margin: 0;
     width: 100%;
+  }
+  .whoIsSophie {
+    padding: 30px 0;
+  }
+  .aboutSophie .wrapper {
+    margin: 0;
+    width: 100%;
+  }
+  .aboutSophie .flexContainer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .aboutSophie .imageContainer {
+    width: 100%;
+    padding: 0;
+  }
+  .aboutSophie .textContainer {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .aboutSophie .faves {
+    padding: 0;
+  }
+  .aboutSophie .travels {
+    padding: 0;
+    text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   form {
     -ms-flex-wrap: wrap;
