@@ -757,6 +757,12 @@ form textarea {
   html {
     font-size: 100%;
   }
+  section p {
+    padding: 10px 0;
+  }
+  h1 {
+    line-height: 50px;
+  }
   .topNav ul {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -811,6 +817,41 @@ form textarea {
   }
   .home .wrapper {
     margin: 0;
+    width: 100%;
+  }
+  .blog h1 {
+    font-size: 2rem;
+  }
+  .blog .wrapper {
+    top: -25px;
+  }
+  form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  form .flexContainer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  form input {
+    width: 100%;
+    margin: 10px 0 0 0;
+  }
+  form textarea {
+    margin-top: 10px;
+  }
+  .contact .flexContainer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contact aside {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  .contact form {
     width: 100%;
   }
 }

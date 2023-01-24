@@ -6,7 +6,7 @@
 @media (max-width: 480px) {
 
     // home page styles
-    // base styles
+    // base styles & typography
     .wrapper {
         width: 90%;
         margin: 0 auto;
@@ -15,6 +15,16 @@
     html {
         font-size: 100%;
     }
+
+    section p {
+        padding: 10px 0;
+    }
+
+    h1 {
+        line-height: 50px;
+    }
+
+
 
     // nav styles
     .topNav {
@@ -76,10 +86,52 @@
         
     }
 
+    // blog & contact page header
+    .blog {
+        h1 {
+            font-size: 2rem;
+        }
+        .wrapper {
+            top: -25px
+        }
+    }
+
+    // form styles {
+    form {
+        flex-wrap: wrap;
+        .flexContainer {
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        input {
+            width: 100%;
+            margin: 10px 0 0 0;
+            
+        }
+
+        textarea {
+            margin-top: 10px;
+        }
+    }
+
     // blog page
 
     // contact page
+    .contact {
+        .flexContainer {
+            flex-wrap: wrap
+        }
+        
+        aside {
+            width: 100%;
+            margin: 0 0 10px 0;
+        }
 
+        form {
+            width: 100%;
+        }
+    }
 
 
 }
