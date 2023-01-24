@@ -1,0 +1,85 @@
+// @media (max-width: 1200px) {
+
+// }
+
+// mobile
+@media (max-width: 480px) {
+
+    // home page styles
+    // base styles
+    .wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    html {
+        font-size: 100%;
+    }
+
+    // nav styles
+    .topNav {
+        ul {
+            justify-content: space-between;
+            padding: 10px 0;
+
+            li:nth-child(3) {
+                display: none;
+            }
+        }
+
+    }
+
+    //header styles
+
+    .home {
+        .flexContainer {
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .imageContainer {
+                padding: 0;
+                position: static;
+                box-shadow: none;
+                width: 50%;
+            }
+
+            .headerText {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-left: 10px;
+                h1 {
+                    font-size: 2rem;
+                }
+
+                img {
+                    top: -20px;
+                    left: -45px;
+                    scale: 35%;
+                }
+            }
+
+
+        }
+
+        .wrapper {
+            margin: 0;
+            width: 100%;
+        }
+    }
+
+    //section styles
+    .aboutSophie {
+        
+    }
+
+    // blog page
+
+    // contact page
+
+
+
+}
