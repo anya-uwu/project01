@@ -16,6 +16,10 @@
         font-size: 100%;
     }
 
+    p {
+        line-height: 25px;
+    }
+
     section p {
         padding: 10px 0;
     }
@@ -61,6 +65,7 @@
                 justify-content: center;
                 align-items: center;
                 padding-left: 10px;
+
                 h1 {
                     font-size: 2rem;
                 }
@@ -82,23 +87,15 @@
     }
 
     //section styles
-    .aboutSophie {
-        
-    }
+    .aboutSophie {}
 
     // blog & contact page header
-    .blog {
-        h1 {
-            font-size: 2rem;
-        }
-        .wrapper {
-            top: -25px
-        }
-    }
+
 
     // form styles {
     form {
         flex-wrap: wrap;
+
         .flexContainer {
             flex-wrap: wrap;
             justify-content: space-between;
@@ -107,7 +104,7 @@
         input {
             width: 100%;
             margin: 10px 0 0 0;
-            
+
         }
 
         textarea {
@@ -116,13 +113,48 @@
     }
 
     // blog page
+    .blog {
+        // blog and contact page header
+        h1 {
+            font-size: 2rem;
+        }
+
+        .wrapper {
+            top: -25px
+        }
+
+        .flexContainer {
+            flex-wrap: wrap;
+            
+        }
+
+        aside {
+            width: 100%;
+            margin: 0;
+            section {
+                margin-right: 0;
+                padding: 20px
+            }
+        }
+
+        .blogPost {
+            width: 100%;
+            margin: 0;
+            article {
+                padding: 20px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+
 
     // contact page
     .contact {
         .flexContainer {
             flex-wrap: wrap
         }
-        
+
         aside {
             width: 100%;
             margin: 0 0 10px 0;
@@ -132,6 +164,4 @@
             width: 100%;
         }
     }
-
-
 }

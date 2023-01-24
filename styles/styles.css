@@ -757,6 +757,9 @@ form textarea {
   html {
     font-size: 100%;
   }
+  p {
+    line-height: 25px;
+  }
   section p {
     padding: 10px 0;
   }
@@ -819,12 +822,6 @@ form textarea {
     margin: 0;
     width: 100%;
   }
-  .blog h1 {
-    font-size: 2rem;
-  }
-  .blog .wrapper {
-    top: -25px;
-  }
   form {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -842,6 +839,32 @@ form textarea {
   }
   form textarea {
     margin-top: 10px;
+  }
+  .blog h1 {
+    font-size: 2rem;
+  }
+  .blog .wrapper {
+    top: -25px;
+  }
+  .blog .flexContainer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .blog aside {
+    width: 100%;
+    margin: 0;
+  }
+  .blog aside section {
+    margin-right: 0;
+    padding: 20px;
+  }
+  .blog .blogPost {
+    width: 100%;
+    margin: 0;
+  }
+  .blog .blogPost article {
+    padding: 20px;
+    margin-bottom: 15px;
   }
   .contact .flexContainer {
     -ms-flex-wrap: wrap;
