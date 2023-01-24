@@ -4,11 +4,14 @@ section p {
     padding: 20px 0;
 }
 
+.whoIsSophie, .gallery, .middleNav, .sophiesJourney {
+    padding: 60px 0;
+}
+
 
 // who is sophie section
 .whoIsSophie {
     background-color: $whiteShade;
-    padding: 60px 0;
 }
 
 // sophies favourite things and travels section
@@ -56,7 +59,6 @@ section p {
 // photos, about, blog, get in touch section
 .middleNav {
     background-color: $whiteShade;
-    padding: 60px 0;
 
     ul {
         display: flex;
@@ -107,7 +109,6 @@ section p {
 // sophies journey
 .sophiesJourney {
     background-color: $whiteShade;
-    padding: 60px 0;
 
     .flexContainer {
         display: flex;
@@ -142,7 +143,6 @@ section p {
 
 .gallery {
     display: flex;
-    padding: 60px 0;
     justify-content: space-between;
 
     li {

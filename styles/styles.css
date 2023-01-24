@@ -399,9 +399,12 @@ section p {
   padding: 20px 0;
 }
 
+.whoIsSophie, .gallery, .middleNav, .sophiesJourney {
+  padding: 60px 0;
+}
+
 .whoIsSophie {
   background-color: #f0efed;
-  padding: 60px 0;
 }
 
 .aboutSophie .flexContainer {
@@ -450,7 +453,6 @@ section p {
 
 .middleNav {
   background-color: #f0efed;
-  padding: 60px 0;
 }
 .middleNav ul {
   display: -webkit-box;
@@ -497,7 +499,6 @@ section p {
 
 .sophiesJourney {
   background-color: #f0efed;
-  padding: 60px 0;
 }
 .sophiesJourney .flexContainer {
   display: -webkit-box;
@@ -538,7 +539,6 @@ section p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 60px 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -749,7 +749,7 @@ form textarea {
   margin: 20px 0;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 700px) {
   .wrapper {
     width: 90%;
     margin: 0 auto;
@@ -765,6 +765,12 @@ form textarea {
   }
   h1 {
     line-height: 50px;
+  }
+  .whoIsSophie,
+.gallery,
+.middleNav,
+.sophiesJourney {
+    padding: 30px 0;
   }
   .topNav ul {
     -webkit-box-pack: justify;
@@ -840,12 +846,9 @@ form textarea {
   .aboutSophie .textContainer {
     width: 90%;
     margin: 0 auto;
-  }
-  .aboutSophie .faves {
-    padding: 0;
+    padding: 20px 0;
   }
   .aboutSophie .travels {
-    padding: 0;
     text-align: left;
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -853,6 +856,52 @@ form textarea {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+  }
+  .middleNav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .middleNav ul li {
+    width: 100%;
+    margin: 0;
+  }
+  .middleNav ul li p {
+    padding: 10px 0;
+  }
+  .sophiesJourney .textContainer {
+    width: 100%;
+    padding: 0;
+  }
+  .sophiesJourney .imageContainer {
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  .sophiesJourney .imageContainer img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 10px solid #f6a823;
+  }
+  .imageGallery .gallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .imageGallery .gallery li {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+  .imageGallery .gallery li:last-child {
+    padding-bottom: 0;
   }
   form {
     -ms-flex-wrap: wrap;
