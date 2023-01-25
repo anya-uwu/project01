@@ -163,7 +163,14 @@ footer {
 }
 
 // contact section
-// filling in the page a solid colour because content is t
+
+// makes contact page take up whole page
+html,
+body {
+    height: 100vh;
+}
+
+// filling in the page a solid colour because content is to small
 .fullHeight {
     height: 100%;
     background-color: $whiteShade

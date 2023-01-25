@@ -226,11 +226,6 @@ html {
   overflow: hidden;
 }
 
-html,
-body {
-  height: 100vh;
-}
-
 .wrapper {
   width: 80%;
   max-width: 1080px;
@@ -562,6 +557,11 @@ footer {
 footer p {
   color: rgb(246, 246, 246);
   text-align: center;
+}
+
+html,
+body {
+  height: 100vh;
 }
 
 .fullHeight {
@@ -975,6 +975,10 @@ form textarea {
   }
 }
 @media (max-width: 600px) {
+  html,
+body {
+    height: auto;
+  }
   .wrapper {
     width: 90%;
     margin: 0 auto;
@@ -1076,6 +1080,9 @@ form textarea {
     width: 100%;
     margin: 0;
     padding-bottom: 20px;
+  }
+  .imageGallery .gallery li img {
+    width: 100%;
   }
   .imageGallery .gallery li:last-child {
     padding-bottom: 0;
