@@ -8,7 +8,8 @@
     }
 
     section p {
-        padding: 10px 0;
+        padding: 20px 0;
+        font-size: 0.95rem;
     }
 
 
@@ -16,29 +17,32 @@
     .gallery,
     .middleNav,
     .sophiesJourney {
-        padding: 30px 0;
+        padding: 40px 0;
     }
 
 
     //header styles
-
     .home {
         .flexContainer {
             h1 {
                 font-size: 4rem;
             }
+
             .headerText {
                 padding-left: 10px;
             }
-            
+
         }
     }
 
-    //section styles
+        .headerText {
+            img {
+                scale: 65%;
+                top: -70%;
+            }
+        }
 
-    .whoIsSophie {
-        padding: 30px 0;
-    }
+    //section styles
 
     .aboutSophie {
         .wrapper {
@@ -51,74 +55,17 @@
         }
 
         .imageContainer {
-            width: 100%;
+            width: 50%;
             padding: 0;
         }
 
         .textContainer {
-            width: 90%;
+            width: 50%;
             margin: 0 auto;
-            padding: 20px 0;
+            padding: 20px 20px;
+            justify-content: space-evenly;
         }
 
-        .travels {
-            text-align: left;
-            align-items: flex-start;
-            order: +1;
-        }
-    }
-
-    .middleNav {
-        ul {
-            flex-direction: column;
-
-            li {
-                width: 100%;
-                margin: 0;
-
-                p {
-                    padding: 10px 0;
-                }
-            }
-        }
-    }
-
-    .sophiesJourney {
-        .textContainer {
-            width: 100%;
-            padding: 0;
-            // h2 {
-            //     font-size: 1.9rem;
-            // }
-        }
-
-        .imageContainer {
-            padding-bottom: 20px;
-            width: 100%;
-
-            img {
-                box-shadow: none;
-                border: 10px solid $primary;
-            }
-        }
-    }
-
-    .imageGallery {
-        .gallery {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            li {
-                width: 100%;
-                margin: 0;
-                padding-bottom: 20px;
-            }
-
-            li:last-child {
-                padding-bottom: 0;
-            }
-        }
     }
 
 
@@ -189,44 +136,21 @@
 
     .home {
         .flexContainer {
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: space-between;
-
             .imageContainer {
                 padding: 0;
-                position: static;
-                box-shadow: none;
-                width: 50%;
+                top: 20px;
             }
-
-            .headerText {
-                width: 50%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                padding-left: 10px;
-                position: relative;
-
-                h1 {
-                    font-size: 2rem;
-                }
-
-                img {
-                    position: absolute;
-                    top: -40px;
-                    left: -45px;
-                    scale: 35%;
-                }
-            }
-
-
         }
+    }
 
-        .wrapper {
-            margin: 0;
-            width: 100%;
+    .headerText {
+        position: relative;
+
+        img {
+            position: absolute;
+            top: -70px;
+            left: -75px;
+            scale: 55%;
         }
     }
 
@@ -237,14 +161,6 @@
     }
 
     .aboutSophie {
-        .wrapper {
-            margin: 0;
-            width: 100%;
-        }
-
-        .flexContainer {
-            flex-wrap: wrap;
-        }
 
         .imageContainer {
             width: 100%;

@@ -755,13 +755,14 @@ form textarea {
     margin: 0 auto;
   }
   section p {
-    padding: 10px 0;
+    padding: 20px 0;
+    font-size: 0.95rem;
   }
   .whoIsSophie,
 .gallery,
 .middleNav,
 .sophiesJourney {
-    padding: 30px 0;
+    padding: 40px 0;
   }
   .home .flexContainer h1 {
     font-size: 4rem;
@@ -769,8 +770,9 @@ form textarea {
   .home .flexContainer .headerText {
     padding-left: 10px;
   }
-  .whoIsSophie {
-    padding: 30px 0;
+  .headerText img {
+    scale: 65%;
+    top: -70%;
   }
   .aboutSophie .wrapper {
     margin: 0;
@@ -781,68 +783,16 @@ form textarea {
         flex-wrap: wrap;
   }
   .aboutSophie .imageContainer {
-    width: 100%;
+    width: 50%;
     padding: 0;
   }
   .aboutSophie .textContainer {
-    width: 90%;
+    width: 50%;
     margin: 0 auto;
-    padding: 20px 0;
-  }
-  .aboutSophie .travels {
-    text-align: left;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  .middleNav ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .middleNav ul li {
-    width: 100%;
-    margin: 0;
-  }
-  .middleNav ul li p {
-    padding: 10px 0;
-  }
-  .sophiesJourney .textContainer {
-    width: 100%;
-    padding: 0;
-  }
-  .sophiesJourney .imageContainer {
-    padding-bottom: 20px;
-    width: 100%;
-  }
-  .sophiesJourney .imageContainer img {
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    border: 10px solid #f6a823;
-  }
-  .imageGallery .gallery {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .imageGallery .gallery li {
-    width: 100%;
-    margin: 0;
-    padding-bottom: 20px;
-  }
-  .imageGallery .gallery li:last-child {
-    padding-bottom: 0;
+    padding: 20px 20px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   form {
     -ms-flex-wrap: wrap;
@@ -889,65 +839,21 @@ form textarea {
 .sophiesJourney {
     padding: 30px 0;
   }
-  .home .flexContainer {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
   .home .flexContainer .imageContainer {
     padding: 0;
-    position: static;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    width: 50%;
+    top: 20px;
   }
-  .home .flexContainer .headerText {
-    width: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-left: 10px;
+  .headerText {
     position: relative;
   }
-  .home .flexContainer .headerText h1 {
-    font-size: 2rem;
-  }
-  .home .flexContainer .headerText img {
+  .headerText img {
     position: absolute;
-    top: -40px;
-    left: -45px;
-    scale: 35%;
-  }
-  .home .wrapper {
-    margin: 0;
-    width: 100%;
+    top: -70px;
+    left: -75px;
+    scale: 55%;
   }
   .whoIsSophie {
     padding: 30px 0;
-  }
-  .aboutSophie .wrapper {
-    margin: 0;
-    width: 100%;
-  }
-  .aboutSophie .flexContainer {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   .aboutSophie .imageContainer {
     width: 100%;
