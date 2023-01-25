@@ -920,9 +920,6 @@ form textarea {
   form textarea {
     margin-top: 10px;
   }
-  .blog h1 {
-    font-size: 2rem;
-  }
   .blog .wrapper {
     top: -25px;
   }
@@ -930,17 +927,19 @@ form textarea {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .blog aside {
-    width: 100%;
-    margin: 0;
-  }
   .blog aside section {
-    margin-right: 0;
-    padding: 20px;
+    margin-right: 20px;
+    padding: 15px;
   }
-  .blog .blogPost {
-    width: 100%;
-    margin: 0;
+  .blog aside section p {
+    padding-top: 5px;
+  }
+  .blog aside section .imageContainer {
+    padding-bottom: 5px;
+  }
+  .blog aside section ul {
+    padding-top: 0;
+    line-height: 25px;
   }
   .blog .blogPost article {
     padding: 20px;
@@ -1149,6 +1148,9 @@ form textarea {
   .blog aside section {
     margin-right: 0;
     padding: 20px;
+  }
+  .blog aside section .imageContainer img {
+    width: 100%;
   }
   .blog .blogPost {
     width: 100%;
