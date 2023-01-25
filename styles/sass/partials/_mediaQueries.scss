@@ -147,8 +147,12 @@
         img {
             position: absolute;
             top: -70px;
-            left: -75px;
+            left: -70px;
             scale: 55%;
+        }
+
+        h1 {
+            margin: 0 10px 0 10px;  
         }
     }
 
@@ -247,12 +251,15 @@
             section {
                 margin-right: 20px;
                 padding: 15px;
+
                 p {
                     padding-top: 5px;
                 }
+
                 .imageContainer {
                     padding-bottom: 5px;
                 }
+
                 ul {
                     padding-top: 0;
                     line-height: 25px;
@@ -285,11 +292,10 @@
     }
 }
 
-// mobile
 @media (max-width: 600px) {
 
     // home page styles
-    // base styles & typography
+    // base styles & typography  
     .wrapper {
         width: 90%;
         margin: 0 auto;
@@ -309,6 +315,11 @@
 
     h1 {
         line-height: 50px;
+    }
+
+    button {
+        padding: 4px 15px;
+        font-size: 0.8rem;
     }
 
     .whoIsSophie,
@@ -334,77 +345,30 @@
     //header styles
     .home {
         .flexContainer {
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: space-between;
-
             .imageContainer {
-                padding: 0;
-                position: static;
+                padding: 20px 0 20px 20px;
+                top: 0;
                 box-shadow: none;
                 width: 50%;
-            }
-
-            .headerText {
-                width: 50%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                padding-left: 10px;
-                position: relative;
-
-                h1 {
-                    font-size: 2rem;
-                }
-
                 img {
-                    position: absolute;
-                    top: -40px;
-                    left: -45px;
-                    scale: 35%;
+                    box-shadow: 5px 5px $white;
                 }
             }
 
-
-        }
-
-        .wrapper {
-            margin: 0;
-            width: 100%;
+            h1 {
+                font-size: 2rem;
+            }
         }
     }
 
-    //section styles
-    .whoIsSophie {
-        padding: 30px 0;
-    }
+    .headerText {
+        position: relative;
 
-    .aboutSophie {
-        .wrapper {
-            margin: 0;
-            width: 100%;
-        }
-
-        .flexContainer {
-            flex-wrap: wrap;
-        }
-
-        .imageContainer {
-            width: 100%;
-            padding: 0;
-        }
-
-        .textContainer {
-            width: 90%;
-            margin: 0 auto;
-            padding: 20px 0;
-        }
-
-        .travels {
-            text-align: left;
-            align-items: flex-start;
-            order: +1;
+        img {
+            position: absolute;
+            top: -40px;
+            left: -50px;
+            scale: 40%;
         }
     }
 
@@ -427,9 +391,6 @@
         .textContainer {
             width: 100%;
             padding: 0;
-            // h2 {
-            //     font-size: 1.9rem;
-            // }
         }
 
         .imageContainer {
@@ -439,6 +400,7 @@
             img {
                 box-shadow: none;
                 border: 10px solid $primary;
+                width: 100%;
             }
         }
     }
@@ -458,28 +420,6 @@
             li:last-child {
                 padding-bottom: 0;
             }
-        }
-    }
-
-
-
-    // form styles {
-    form {
-        flex-wrap: wrap;
-
-        .flexContainer {
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        input {
-            width: 100%;
-            margin: 10px 0 0 0;
-
-        }
-
-        textarea {
-            margin-top: 10px;
         }
     }
 
@@ -507,6 +447,7 @@
             section {
                 margin-right: 0;
                 padding: 20px;
+
                 .imageContainer {
                     img {
                         width: 100%;
@@ -523,22 +464,6 @@
                 padding: 20px;
                 margin-bottom: 15px;
             }
-        }
-    }
-
-    // contact page
-    .contact {
-        .flexContainer {
-            flex-wrap: wrap
-        }
-
-        aside {
-            width: 100%;
-            margin: 0 0 10px 0;
-        }
-
-        form {
-            width: 100%;
         }
     }
 }

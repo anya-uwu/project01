@@ -849,8 +849,11 @@ form textarea {
   .headerText img {
     position: absolute;
     top: -70px;
-    left: -75px;
+    left: -70px;
     scale: 55%;
+  }
+  .headerText h1 {
+    margin: 0 10px 0 10px;
   }
   .whoIsSophie {
     padding: 30px 0;
@@ -974,6 +977,10 @@ form textarea {
   h1 {
     line-height: 50px;
   }
+  button {
+    padding: 4px 15px;
+    font-size: 0.8rem;
+  }
   .whoIsSophie,
 .gallery,
 .middleNav,
@@ -989,83 +996,28 @@ form textarea {
   .topNav ul li:nth-child(3) {
     display: none;
   }
-  .home .flexContainer {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
   .home .flexContainer .imageContainer {
-    padding: 0;
-    position: static;
+    padding: 20px 0 20px 20px;
+    top: 0;
     -webkit-box-shadow: none;
             box-shadow: none;
     width: 50%;
   }
-  .home .flexContainer .headerText {
-    width: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-left: 10px;
-    position: relative;
+  .home .flexContainer .imageContainer img {
+    -webkit-box-shadow: 5px 5px rgb(246, 246, 246);
+            box-shadow: 5px 5px rgb(246, 246, 246);
   }
-  .home .flexContainer .headerText h1 {
+  .home .flexContainer h1 {
     font-size: 2rem;
   }
-  .home .flexContainer .headerText img {
+  .headerText {
+    position: relative;
+  }
+  .headerText img {
     position: absolute;
     top: -40px;
-    left: -45px;
-    scale: 35%;
-  }
-  .home .wrapper {
-    margin: 0;
-    width: 100%;
-  }
-  .whoIsSophie {
-    padding: 30px 0;
-  }
-  .aboutSophie .wrapper {
-    margin: 0;
-    width: 100%;
-  }
-  .aboutSophie .flexContainer {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .aboutSophie .imageContainer {
-    width: 100%;
-    padding: 0;
-  }
-  .aboutSophie .textContainer {
-    width: 90%;
-    margin: 0 auto;
-    padding: 20px 0;
-  }
-  .aboutSophie .travels {
-    text-align: left;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    left: -50px;
+    scale: 40%;
   }
   .middleNav ul {
     -webkit-box-orient: vertical;
@@ -1092,6 +1044,7 @@ form textarea {
     -webkit-box-shadow: none;
             box-shadow: none;
     border: 10px solid #f6a823;
+    width: 100%;
   }
   .imageGallery .gallery {
     -webkit-box-orient: vertical;
@@ -1112,24 +1065,6 @@ form textarea {
   }
   .imageGallery .gallery li:last-child {
     padding-bottom: 0;
-  }
-  form {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  form .flexContainer {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  form input {
-    width: 100%;
-    margin: 10px 0 0 0;
-  }
-  form textarea {
-    margin-top: 10px;
   }
   .blog h1 {
     font-size: 2rem;
@@ -1159,16 +1094,5 @@ form textarea {
   .blog .blogPost article {
     padding: 20px;
     margin-bottom: 15px;
-  }
-  .contact .flexContainer {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .contact aside {
-    width: 100%;
-    margin: 0 0 10px 0;
-  }
-  .contact form {
-    width: 100%;
   }
 }
