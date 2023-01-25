@@ -12,6 +12,7 @@ img {
     display: block;
 }
 
+//base button styles
 button {
     font-size: 1rem;
     font-weight: bold;
@@ -23,9 +24,12 @@ button {
     color: $blackShade;
     background-color: $accent;
     border: none;
+
+    // changed button colours on interaction
     &:hover {
         color: $white;
     }
+
     &:focus {
         color: $white;
     }
@@ -38,7 +42,8 @@ ul {
     margin: 0;
 }
 
-a, i{
+a,
+i {
     color: $blackShade;
     text-decoration: none;
 }

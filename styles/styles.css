@@ -262,7 +262,8 @@ ul {
   margin: 0;
 }
 
-a, i {
+a,
+i {
   color: #2c2c2c;
   text-decoration: none;
 }
@@ -286,11 +287,20 @@ body {
   letter-spacing: 0px;
 }
 
-h1, h2, h3, h4, p {
+h1,
+h2,
+h3,
+h4,
+p {
   margin: 0;
 }
 
-h1, h2, h3, .middleNav a, h4, .topNav li {
+h1,
+h2,
+h3,
+.middleNav a,
+h4,
+.topNav li {
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -307,7 +317,8 @@ h2 {
   letter-spacing: 1px;
 }
 
-h3, .middleNav a {
+h3,
+.middleNav a {
   font-size: 1.6rem;
   letter-spacing: 1px;
 }
@@ -399,7 +410,10 @@ section p {
   padding: 20px 0;
 }
 
-.whoIsSophie, .gallery, .middleNav, .sophiesJourney {
+.whoIsSophie,
+.gallery,
+.middleNav,
+.sophiesJourney {
   padding: 60px 0;
 }
 
@@ -745,7 +759,8 @@ form input::-ms-input-placeholder, form textarea::-ms-input-placeholder {
   font-style: italic;
   margin-left: 10px;
 }
-form input::placeholder, form textarea::placeholder {
+form input::placeholder,
+form textarea::placeholder {
   font-style: italic;
   margin-left: 10px;
 }
@@ -979,31 +994,9 @@ form textarea {
 body {
     height: auto;
   }
-  .wrapper {
-    width: 90%;
-    margin: 0 auto;
-  }
-  html {
-    font-size: 100%;
-  }
-  p {
-    line-height: 25px;
-  }
-  section p {
-    padding: 10px 0;
-  }
-  h1 {
-    line-height: 50px;
-  }
   button {
     padding: 4px 15px;
     font-size: 0.8rem;
-  }
-  .whoIsSophie,
-.gallery,
-.middleNav,
-.sophiesJourney {
-    padding: 30px 0;
   }
   .topNav ul {
     -webkit-box-pack: justify;

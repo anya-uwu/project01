@@ -3,7 +3,11 @@ section p {
     padding: 20px 0;
 }
 
-.whoIsSophie, .gallery, .middleNav, .sophiesJourney {
+// adding padding to specific sections
+.whoIsSophie,
+.gallery,
+.middleNav,
+.sophiesJourney {
     padding: 60px 0;
 }
 
@@ -90,7 +94,7 @@ section p {
                 padding: 20px 0;
             }
         }
-    
+
         li:nth-child(2n) {
             margin-right: 0;
         }
@@ -216,7 +220,6 @@ body {
     form {
         width: calc((100%/3)*2);
     }
-
 }
 
 // blog sections

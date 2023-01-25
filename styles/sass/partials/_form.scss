@@ -3,6 +3,7 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     .flexContainer {
         display: flex;
         justify-content: space-between;
@@ -16,7 +17,8 @@ form {
         padding: 20px 0 20px 20px;
     }
 
-    input::placeholder, textarea::placeholder {
+    input::placeholder,
+    textarea::placeholder {
         font-style: italic;
         margin-left: 10px;
     }
@@ -24,7 +26,7 @@ form {
     input[type=email] {
         margin-right: 0;
     }
-    
+
     textarea {
         resize: none;
         border: none;

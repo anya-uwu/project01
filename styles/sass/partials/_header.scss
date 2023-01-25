@@ -1,6 +1,7 @@
 // home page header styles
 .home {
     background-color: $primary;
+
     // flex stuff
     .flexContainer {
         display: flex;
@@ -35,6 +36,7 @@
 // blog and contact header styles
 .blog {
     background-color: $whiteShade;
+
     .wrapper {
         position: relative;
         top: -50px;
