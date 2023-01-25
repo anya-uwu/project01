@@ -35,12 +35,12 @@
         }
     }
 
-        .headerText {
-            img {
-                scale: 65%;
-                top: -70%;
-            }
+    .headerText {
+        img {
+            scale: 65%;
+            top: -70%;
         }
+    }
 
     //section styles
 
@@ -161,22 +161,30 @@
     }
 
     .aboutSophie {
+        .flexContainer {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-content: stretch;
 
-        .imageContainer {
-            width: 100%;
-            padding: 0;
-        }
+            .imageContainer {
+                width: 100%;
+                padding: 0;
 
-        .textContainer {
-            width: 90%;
-            margin: 0 auto;
-            padding: 20px 0;
-        }
+                img {
+                    width: 100%;
+                }
+            }
 
-        .travels {
-            text-align: left;
-            align-items: flex-start;
-            order: +1;
+            .textContainer {
+                width: 100%;
+                padding: 20px 20px;
+            }
+
+            .travels {
+                text-align: left;
+                align-items: flex-start;
+                order: +1;
+            }
         }
     }
 
@@ -195,45 +203,16 @@
         }
     }
 
-    .sophiesJourney {
-        .textContainer {
-            width: 100%;
-            padding: 0;
-            // h2 {
-            //     font-size: 1.9rem;
-            // }
-        }
-
-        .imageContainer {
-            padding-bottom: 20px;
-            width: 100%;
-
-            img {
-                box-shadow: none;
-                border: 10px solid $primary;
-            }
-        }
-    }
-
     .imageGallery {
         .gallery {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
             li {
-                width: 100%;
-                margin: 0;
-                padding-bottom: 20px;
+                width: calc(100% / 3 - 20px);
+                margin-right: 20px;
             }
 
-            li:last-child {
-                padding-bottom: 0;
-            }
+
         }
     }
-
-
 
     // form styles {
     form {
