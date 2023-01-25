@@ -47,10 +47,6 @@
             max-width: 100%;
         }
 
-        .flexContainer {
-            flex-wrap: wrap;
-        }
-
         .imageContainer {
             width: 50%;
             padding: 0;
@@ -99,11 +95,6 @@
 
     // home page styles
     // base styles & typography
-    .wrapper {
-        width: 90%;
-        margin: 0 auto;
-    }
-
     html {
         font-size: 100%;
     }
@@ -138,10 +129,7 @@
     }
 
     .headerText {
-        position: relative;
-
         img {
-            position: absolute;
             top: -70px;
             left: -70px;
             scale: 55%;
@@ -152,11 +140,6 @@
         }
     }
 
-    //section styles
-    .whoIsSophie {
-        padding: 30px 0;
-    }
-
     .aboutSophie {
         .flexContainer {
             flex-wrap: nowrap;
@@ -165,7 +148,6 @@
 
             .imageContainer {
                 width: 100%;
-                padding: 0;
 
                 img {
                     width: 100%;
@@ -174,7 +156,6 @@
 
             .textContainer {
                 width: 100%;
-                padding: 20px 20px;
             }
 
             .travels {
@@ -211,21 +192,12 @@
 
     // form styles {
     form {
-        flex-wrap: wrap;
-
-        .flexContainer {
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
+        padding-top: 10px;
 
         input {
             width: 100%;
             margin: 10px 0 0 0;
 
-        }
-
-        textarea {
-            margin-top: 10px;
         }
     }
 
@@ -338,28 +310,10 @@
     }
 
     .headerText {
-        position: relative;
-
         img {
-            position: absolute;
             top: -40px;
             left: -50px;
             scale: 40%;
-        }
-    }
-
-    .middleNav {
-        ul {
-            flex-direction: column;
-
-            li {
-                width: 100%;
-                margin: 0;
-
-                p {
-                    padding: 10px 0;
-                }
-            }
         }
     }
 
@@ -409,15 +363,6 @@
         // blog and contact page header
         h1 {
             font-size: 2rem;
-        }
-
-        .wrapper {
-            top: -25px
-        }
-
-        .flexContainer {
-            flex-wrap: wrap;
-
         }
 
         aside {
