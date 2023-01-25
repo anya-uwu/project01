@@ -226,6 +226,11 @@ html {
   overflow: hidden;
 }
 
+html,
+body {
+  height: 100vh;
+}
+
 .wrapper {
   width: 80%;
   max-width: 1080px;
@@ -559,6 +564,11 @@ footer p {
   text-align: center;
 }
 
+.fullHeight {
+  height: 100%;
+  background-color: #f0efed;
+}
+
 .contact {
   background-color: #f0efed;
   padding-bottom: 60px;
@@ -777,6 +787,7 @@ form textarea {
   .aboutSophie .wrapper {
     margin: 0;
     width: 100%;
+    max-width: 100%;
   }
   .aboutSophie .flexContainer {
     -ms-flex-wrap: wrap;
@@ -938,7 +949,7 @@ form textarea {
     padding-top: 5px;
   }
   .blog aside section .imageContainer {
-    padding-bottom: 5px;
+    padding-bottom: 10px;
   }
   .blog aside section ul {
     padding-top: 0;
@@ -947,6 +958,9 @@ form textarea {
   .blog .blogPost article {
     padding: 20px;
     margin-bottom: 15px;
+  }
+  .blog .blogPost .comment .textContainer {
+    padding-left: 5px;
   }
   .contact .flexContainer {
     -ms-flex-wrap: wrap;
