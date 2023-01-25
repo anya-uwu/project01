@@ -184,6 +184,11 @@
                 width: calc(100% / 3 - 20px);
                 margin-right: 20px;
             }
+
+            // removing margin from last item
+            li:last-child {
+                margin-right: 0;
+            }
         }
     }
 
