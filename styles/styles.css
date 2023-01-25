@@ -777,7 +777,6 @@ form textarea {
 @media (max-width: 1200px) {
   .wrapper {
     width: 90%;
-    margin: 0 auto;
   }
   section p {
     font-size: 0.95rem;
