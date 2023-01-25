@@ -246,7 +246,7 @@
     // contact page
     .contact {
         .flexContainer {
-            flex-wrap: wrap
+            flex-wrap: wrap;
         }
 
         aside {
@@ -271,6 +271,16 @@
     button {
         padding: 4px 15px;
         font-size: 0.8rem;
+    }
+
+    // making heading fonts smaller
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3,
+    .middleNav a {
+        font-size: 1.4rem;
     }
 
     // nav styles
