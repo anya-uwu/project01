@@ -1,15 +1,4 @@
-// make sticky to anchor it to the top
-// flex it so it horizontal
-
-// item in the nav shoul be white when selected
-
-// change the way I wrote the nav html? 
-// instead of two ul make one ul and style the sophie header by targeting the child
-
-// setting top nav typography
-
-// remove list styles here or overall
-
+// nav bar styles
 .topNav {
     position: sticky;
     top: 0;
@@ -28,6 +17,7 @@
         }
     }
 
+    // changing link colors on hover and click
     a {
         &:hover {
             color: $white;
