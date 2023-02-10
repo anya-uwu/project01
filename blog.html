@@ -174,15 +174,47 @@
     <!-- javascript for assignment 2 -->
     <script>
         // filling in and submitting the form creates a new comment
+        
         // pseudocode
+        // watch for submit button press
+        // on submit:
             // checks to see if entered info is valid
                 // none of the boxes are empty
                 // email is an actual email
                 // name is a name (not to long or short)
                 // comment has a character limit
-            
             // on submit an article with a class of comment should be created as a child of the blog post div
+                // create div with class of text container appended to it
+                    // two other children should be created and appended to it
+                    // p child with the comment
+                    // p with class of date
             // current date and time recorded and added to the comment
+
+        // creating a feature object
+        const feature = {};
+        const form = document.querySelector('.commentForm');
+        
+        form.addEventListener('submit', function(e){
+            e.preventDefault();
+            console.log('chicken');
+        });
+
+        // feature.watchForSubmit = function () {
+        //     app.form.addEventListener('submit', function (e) {
+        //         e.preventDefault();
+        //         // store the value of the comment
+
+                
+        //     });
+        // }
+
+        // // function that initializes the program
+        // feature.init = function () {
+        //     // selecting the form
+        //     feature.form = document.querySelector('.commentForm');
+        //     feature.comment = document.querySelector('');
+
+        // }
     
     </script>
 </body>
