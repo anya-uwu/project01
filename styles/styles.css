@@ -782,9 +782,9 @@ form textarea {
     font-size: 0.95rem;
   }
   .whoIsSophie,
-.gallery,
-.middleNav,
-.sophiesJourney {
+  .gallery,
+  .middleNav,
+  .sophiesJourney {
     padding: 40px 0;
   }
   .home .flexContainer h1 {
@@ -848,9 +848,9 @@ form textarea {
     line-height: 50px;
   }
   .whoIsSophie,
-.gallery,
-.middleNav,
-.sophiesJourney {
+  .gallery,
+  .middleNav,
+  .sophiesJourney {
     padding: 30px 0;
   }
   .home .flexContainer .imageContainer {
@@ -962,7 +962,7 @@ form textarea {
 }
 @media (max-width: 600px) {
   html,
-body {
+  body {
     height: auto;
   }
   button {
@@ -973,7 +973,7 @@ body {
     font-size: 1.8rem;
   }
   h3,
-.middleNav a {
+  .middleNav a {
     font-size: 1.4rem;
   }
   .topNav ul {

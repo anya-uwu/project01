@@ -114,35 +114,37 @@
                 </article>
 
                 <!-- comments -->
-                <article class="comment">
-                    <div class="imageContainer">
-                        <img src="./assets/blog-image-3.jpg" alt="user profile picture">
-                    </div>
-                    <div class="textContainer">
-                        <p class="date">Tuesday October 9th, 2018 by Jeremy</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quas suscipit rerum ab,
-                            nisi
-                            iste
-                            facere iusto dolore, consequatur laborum iure! Error esse beatae culpa odit fugiat ea
-                            excepturi
-                            suscipit!</p>
-                    </div> <!-- .textContainer ends -->
-                </article> <!-- .comment ends -->
+                <div class="commentSection">
+                    <article class="comment">
+                        <div class="imageContainer">
+                            <img src="./assets/blog-image-3.jpg" alt="user profile picture">
+                        </div>
+                        <div class="textContainer">
+                            <p class="date">Tuesday October 9th, 2018 by Jeremy</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quas suscipit rerum ab,
+                                nisi
+                                iste
+                                facere iusto dolore, consequatur laborum iure! Error esse beatae culpa odit fugiat ea
+                                excepturi
+                                suscipit!</p>
+                        </div> <!-- .textContainer ends -->
+                    </article> <!-- .comment ends -->
 
-                <article class="comment">
-                    <div class="imageContainer">
-                        <img src="./assets/blog-image-4.jpg" alt="user profile picture">
-                    </div>
-                    <div class="textContainer">
-                        <p class="date">Wednesday October 10th, 2018 by Julia</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quas suscipit rerum ab,
-                            nisi
-                            iste
-                            facere iusto dolore, consequatur laborum iure! Error esse beatae culpa odit fugiat ea
-                            excepturi
-                            suscipit!</p>
-                    </div> <!-- .textContainer ends -->
-                </article> <!-- .comment ends -->
+                    <article class="comment">
+                        <div class="imageContainer">
+                            <img src="./assets/blog-image-4.jpg" alt="user profile picture">
+                        </div>
+                        <div class="textContainer">
+                            <p class="date">Wednesday October 10th, 2018 by Julia</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quas suscipit rerum ab,
+                                nisi
+                                iste
+                                facere iusto dolore, consequatur laborum iure! Error esse beatae culpa odit fugiat ea
+                                excepturi
+                                suscipit!</p>
+                        </div> <!-- .textContainer ends -->
+                    </article> <!-- .comment ends -->
+                </div>
 
                 <!-- comment form -->
                 <article class="commentForm">
@@ -199,7 +201,18 @@
             console.log('chicken');
             const comment = document.getElementById('comment').value
             console.log(comment);
+            const newComment = document.createElement('article')        
+            newComment.innerHTML =`
+                    <div class="textContainer">
+                        <p class="date"></p>
+                        <p>${comment}</p>
+                    </div>
+            `;
+            document.querySelector('.commentSection').appendChild(newComment);
+
         });
+
+
 
         // feature.watchForSubmit = function () {
         //     app.form.addEventListener('submit', function (e) {
