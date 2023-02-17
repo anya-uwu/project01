@@ -195,21 +195,39 @@
         // creating a feature object
         const feature = {};
         const form = document.querySelector('.commentForm');
+        // array of months to pull from
+        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        // array of days to pull from
+        const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+        function getSuffix(date) {
+            if (date === 2 || date === 22) {
+                return 'nd'
+            } else if (date === 3 || date === 23 ) {
+                return 'rd'
+            } else if (date === 1 || date === 21 || date === 31) {
+                return 'st'
+            } else {
+                return 'th'
+            }
+        }
         
         form.addEventListener('submit', function(e){
+            
+            const commentDate = new Date();
             e.preventDefault();
             console.log('chicken');
+            const name = document.getElementById('name').value
             const comment = document.getElementById('comment').value
             console.log(comment);
             const newComment = document.createElement('article')        
             newComment.innerHTML =`
                     <div class="textContainer">
-                        <p class="date"></p>
+                        <p class="date">${days[commentDate.getDay()]} ${months[commentDate.getMonth()]} ${commentDate.getDate()}${getSuffix(commentDate.getDate)}, ${commentDate.getFullYear()} by ${name}</p>
                         <p>${comment}</p>
                     </div>
             `;
             document.querySelector('.commentSection').appendChild(newComment);
-
         });
 
 
