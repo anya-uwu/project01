@@ -200,7 +200,9 @@
         // array of days to pull from
         const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
+        // function for getting date suffix
         function getSuffix(date) {
+            console.log(date);
             if (date === 2 || date === 22) {
                 return 'nd'
             } else if (date === 3 || date === 23 ) {
@@ -209,25 +211,36 @@
                 return 'st'
             } else {
                 return 'th'
-            }
-        }
+            };
+        };
+
+        // checks for valid form submission
+            // all boxes are filled
+            function checkComment(x, y, z) {
+                if (x.length == 0 || y.length == 0 || z.length == 0) {
+                    alert("Incomplete from submission. Please complete all boxes and try again.");
+                } else {
+                    newComment(x, y, z);
+                };
+            };
+
+        function newComment(n, e, c) {
+            const commentDate = new Date();          
+            const newComment = document.createElement('article');
+            newComment.innerHTML = `
+                    <div class="textContainer">
+                        <p class="date">${days[commentDate.getDay()]} ${months[commentDate.getMonth()]} ${commentDate.getDate()}${getSuffix(commentDate.getDate())}, ${commentDate.getFullYear()} by ${n}</p>
+                        <p>${c}</p>
+                    </div>`;
+            document.querySelector('.commentSection').appendChild(newComment);
+        };
         
         form.addEventListener('submit', function(e){
-            
-            const commentDate = new Date();
             e.preventDefault();
-            console.log('chicken');
-            const name = document.getElementById('name').value
-            const comment = document.getElementById('comment').value
-            console.log(comment);
-            const newComment = document.createElement('article')        
-            newComment.innerHTML =`
-                    <div class="textContainer">
-                        <p class="date">${days[commentDate.getDay()]} ${months[commentDate.getMonth()]} ${commentDate.getDate()}${getSuffix(commentDate.getDate)}, ${commentDate.getFullYear()} by ${name}</p>
-                        <p>${comment}</p>
-                    </div>
-            `;
-            document.querySelector('.commentSection').appendChild(newComment);
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const comment = document.getElementById('comment').value;
+            checkComment(name, email, comment);
         });
 
 
