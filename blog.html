@@ -175,7 +175,7 @@
 
     <!-- javascript for assignment 2 -->
     <script>
-        // filling in and submitting the form creates a new comment
+        // filling in and submitting the form creates a new comment on the page
         
         // pseudocode
         // watch for submit button press
@@ -194,6 +194,7 @@
 
         // creating a feature object
         const feature = {};
+        // creating selector for the form
         feature.form = document.querySelector('.commentForm');
         // array of months to pull from
         feature.months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -202,6 +203,7 @@
 
         // function for getting date suffix
         feature.getSuffix = function(date) {
+            // if statement to handle various cases
             if (date === 2 || date === 22) {
                 return 'nd'
             } else if (date === 3 || date === 23 ) {
@@ -214,7 +216,7 @@
         };
 
         // checks for valid form submission
-        // all boxes are filled
+        // if any of the boxes is empty alert is sent, otheriwse newComment function called
         feature.checkComment = function(x, y, z) {
             if (x.length == 0 || y.length == 0 || z.length == 0) {
                 alert("Incomplete from submission. Please complete all boxes and try again.");
@@ -222,28 +224,39 @@
                     feature.newComment(x, y, z);
             };
             };
-
+        
+        // function that creates new comment
         feature.newComment = function(n, e, c) {
-            const commentDate = new Date();          
+            // creates new date instance
+            const commentDate = new Date();
+            // creates new comment article
             const newComment = document.createElement('article');
+            // fills new comment with name, date and comment information
             newComment.innerHTML = `
                     <div class="textContainer">
                         <p class="date">${feature.days[commentDate.getDay()]} ${feature.months[commentDate.getMonth()]} ${commentDate.getDate()}${feature.getSuffix(commentDate.getDate())}, ${commentDate.getFullYear()} by ${n}</p>
                         <p>${c}</p>
                     </div>`;
+            // appending new comment to the page
             document.querySelector('.commentSection').appendChild(newComment);
         };
 
+        // init function to start app
         feature.init = function() {
+            // creating form event listener that watches for submit
             feature.form.addEventListener('submit', function (e) {
+                // preventing page reload
                 e.preventDefault();
+                // getting users name, email and comment values from the form
                 const name = document.getElementById('name').value;
                 const email = document.getElementById('email').value;
                 const comment = document.getElementById('comment').value;
+                // running checkComment function to check if form submission is valid
                 feature.checkComment(name, email, comment);
             });
         }
 
+        // running app
         feature.init();
     
     </script>
