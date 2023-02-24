@@ -674,10 +674,10 @@ body {
 .blog .blogPost article h3 {
   padding-bottom: 10px;
 }
-.blog .blogPost article:first-child {
+.blog .blogPost .post {
   border-bottom: 5px solid #f6a823;
 }
-.blog .blogPost article:nth-last-child(2) {
+.blog .blogPost .commentSection article:nth-last-child(1) {
   border-bottom: 5px solid #f6a823;
 }
 .blog .blogPost form {

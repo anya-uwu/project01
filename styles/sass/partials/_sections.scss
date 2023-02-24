@@ -282,12 +282,14 @@ body {
         }
 
         // adding borders to specific elements
-        article:first-child {
+        .post {
             border-bottom: 5px solid $primary;
         }
 
-        article:nth-last-child(2) {
-            border-bottom: 5px solid $primary;
+        .commentSection {
+            article:nth-last-child(1) {
+                border-bottom: 5px solid $primary;
+            }
         }
 
         form {
