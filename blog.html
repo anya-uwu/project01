@@ -218,12 +218,32 @@
         // checks for valid form submission
         // if any of the boxes is empty alert is sent, otheriwse newComment function called
         feature.checkComment = function(x, y, z) {
+
+            // stores number of spaces counted in a string
+            let spaceCount = 0;
+            let charCount = 0;
+
+            // counts number of spaces in comment
+            for (let i = 0; i < x.length; i++) {
+                if (i === " ") {
+                    spaceCount++;
+                } else {
+                    charCount++;
+                }
+            }
+
+            // check for extra space at beginning of name/comment
+            // check for numbers and special characters in name
+            // check for empty "  " name or comment
+            // check for curse words and censor them with ***
+            // different functions/loops to check for different information to keep in a variable then one form compares that information
+
             if (x.length == 0 || y.length == 0 || z.length == 0) {
-                alert("Incomplete from submission. Please complete all boxes and try again.");
+        
             } else {
                     feature.newComment(x, y, z);
             };
-            };
+        };
         
         // function that creates new comment
         feature.newComment = function(n, e, c) {
@@ -254,7 +274,7 @@
                 // running checkComment function to check if form submission is valid
                 feature.checkComment(name, email, comment);
             });
-        }
+        };
 
         // running app
         feature.init();
