@@ -200,6 +200,15 @@
         feature.months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
         // array of days to pull from
         feature.days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        // array of letters
+        feature.letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+
+        // stores number of spaces counted in a string
+        feature.spaceCount = 0;
+        feature.charCount = 0;
+        feature.containsSymbol = false;
+
+        
 
         // function for getting date suffix
         feature.getSuffix = function(date) {
@@ -215,22 +224,34 @@
             };
         };
 
-        // checks for valid form submission
-        // if any of the boxes is empty alert is sent, otheriwse newComment function called
-        feature.checkComment = function(x, y, z) {
-
-            // stores number of spaces counted in a string
-            let spaceCount = 0;
-            let charCount = 0;
-
+        // counts the number of spaces and characters in a string
+        feature.countCharacters = function(text) {
             // counts number of spaces in comment
             for (let i = 0; i < x.length; i++) {
                 if (i === " ") {
-                    spaceCount++;
+                    feature.spaceCount++;
                 } else {
-                    charCount++;
-                }
-            }
+                    feature.charCount++;
+                };
+            };
+        };
+
+        // function checks a string for numbers of symbols
+        feature.checkForSymbols = function(text) {
+            for (let i = 0; i < x.length; i++) {
+                for (let j = 0; i < 52; j++) {
+                    if (i === j) {
+                        break;
+                    } else {
+                        containsSymbol = true;
+                    };
+                };
+            };
+        };
+
+        // checks for valid form submission
+        // if any of the boxes is empty alert is sent, otheriwse newComment function called
+        feature.checkComment = function(x, y, z) {
 
             // check for extra space at beginning of name/comment
             // check for numbers and special characters in name
@@ -238,8 +259,8 @@
             // check for curse words and censor them with ***
             // different functions/loops to check for different information to keep in a variable then one form compares that information
 
-            if (x.length == 0 || y.length == 0 || z.length == 0) {
-        
+            if (x.length === 0 || y.length === 0 || z.length === 0) {
+                
             } else {
                     feature.newComment(x, y, z);
             };
