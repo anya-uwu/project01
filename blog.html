@@ -221,38 +221,39 @@
 
         // counts the number of spaces and characters in a string
         feature.countCharacters = function (text) {
-            feature.spaceCount = 0;
-            feature.charCount = 0;
+            spaceCount = 0;
+            charCount = 0;
 
             // counts number of spaces in comment
             for (let i = 0; i < text.length; i++) {
-                if (i === " ") {
-                    feature.spaceCount++;
+                if (text[i] === " ") {
+                    spaceCount++;
                 } else {
-                    feature.charCount++;
+                    charCount++;
                 };
             };
+            console.log(spaceCount);
             // returns how many spaces are in the text
-            return feature.spaceCount;
+            return spaceCount;
         };
 
         // function checks a string for numbers of symbols
         // my logic was to compare the text to an array of alphabet letter instead of symbols and numbers as there are fewer letter than there are computer symbols however I realized this isn't inclusive of other languages
-        feature.checkForSymbols = function (text) {
+        // feature.checkForSymbols = function (text) {
 
-            feature.containsSymbol = false;
+        //     feature.containsSymbol = false;
 
-            for (let i = 0; i < text.length; i++) {
-                for (let j = 0; i < 52; j++) {
-                    if (text[i] === feature.letters[j]) {
-                    } else {
-                        feature.containsSymbol = true;
-                    };
-                };
-            };
-            // returns true if it contains a symbol
-            return feature.containsSymbol;
-        };
+        //     for (let i = 0; i < text.length; i++) {
+        //         for (let j = 0; i < 52; j++) {
+        //             if (text[i] === feature.letters[j]) {
+        //             } else {
+        //                 feature.containsSymbol = true;
+        //             };
+        //         };
+        //     };
+        //     // returns true if it contains a symbol
+        //     return feature.containsSymbol;
+        // };
 
         // checks for valid form submission
         // if any of the boxes is empty alert is sent, otheriwse newComment function called
@@ -262,9 +263,9 @@
             if (name.length === 0 || email.length === 0 || comment.length === 0 || feature.countCharacters(name) === name.length || feature.countCharacters(email) === email.length || feature.countCharacters(comment) === comment.length) {
                 alert("Please complete all boxes");
                 // checks specifically the name for non letter characters to make sure name has no symbols
-            } else if (feature.checkForSymbols(name) === true) {
-                alert("Name should be alphabet letters only");
-                // all is good comment is posted!
+            // } else if (feature.checkForSymbols(name) === true) {
+            //     alert("Name should be alphabet letters only");
+            //     // all is good comment is posted!
             } else {
                 feature.newComment(name, email, comment);
             };
