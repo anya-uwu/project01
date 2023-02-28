@@ -121,7 +121,8 @@
                         </div>
                         <div class="textContainer">
                             <p class="date">Tuesday October 9th, 2018 by Jeremy</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quas suscipit rerum ab,
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quas suscipit rerum
+                                ab,
                                 nisi
                                 iste
                                 facere iusto dolore, consequatur laborum iure! Error esse beatae culpa odit fugiat ea
@@ -136,7 +137,8 @@
                         </div>
                         <div class="textContainer">
                             <p class="date">Wednesday October 10th, 2018 by Julia</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quas suscipit rerum ab,
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quas suscipit rerum
+                                ab,
                                 nisi
                                 iste
                                 facere iusto dolore, consequatur laborum iure! Error esse beatae culpa odit fugiat ea
@@ -176,21 +178,21 @@
     <!-- javascript for assignment 2 -->
     <script>
         // filling in and submitting the form creates a new comment on the page
-        
+
         // pseudocode
         // watch for submit button press
         // on submit:
-            // checks to see if entered info is valid
-                // none of the boxes are empty
-                // email is an actual email
-                // name is a name (not to long or short)
-                // comment has a character limit
-            // on submit an article with a class of comment should be created as a child of the blog post div
-                // create div with class of text container appended to it
-                    // two other children should be created and appended to it
-                    // p child with the comment
-                    // p with class of date
-            // current date and time recorded and added to the comment
+        // checks to see if entered info is valid
+        // none of the boxes are empty
+        // email is an actual email
+        // name is a name (not to long or short)
+        // comment has a character limit
+        // on submit an article with a class of comment should be created as a child of the blog post div
+        // create div with class of text container appended to it
+        // two other children should be created and appended to it
+        // p child with the comment
+        // p with class of date
+        // current date and time recorded and added to the comment
 
         // creating a feature object
         const feature = {};
@@ -203,19 +205,12 @@
         // array of letters
         feature.letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
-        // stores number of spaces counted in a string
-        feature.spaceCount = 0;
-        feature.charCount = 0;
-        feature.containsSymbol = false;
-
-        
-
         // function for getting date suffix
-        feature.getSuffix = function(date) {
+        feature.getSuffix = function (date) {
             // if statement to handle various cases
             if (date === 2 || date === 22) {
                 return 'nd'
-            } else if (date === 3 || date === 23 ) {
+            } else if (date === 3 || date === 23) {
                 return 'rd'
             } else if (date === 1 || date === 21 || date === 31) {
                 return 'st'
@@ -225,49 +220,58 @@
         };
 
         // counts the number of spaces and characters in a string
-        feature.countCharacters = function(text) {
+        feature.countCharacters = function (text) {
+            feature.spaceCount = 0;
+            feature.charCount = 0;
+
             // counts number of spaces in comment
-            for (let i = 0; i < x.length; i++) {
+            for (let i = 0; i < text.length; i++) {
                 if (i === " ") {
                     feature.spaceCount++;
                 } else {
                     feature.charCount++;
                 };
             };
+            // returns how many spaces are in the text
+            return feature.spaceCount;
         };
 
         // function checks a string for numbers of symbols
-        feature.checkForSymbols = function(text) {
-            for (let i = 0; i < x.length; i++) {
+        // my logic was to compare the text to an array of alphabet letter instead of symbols and numbers as there are fewer letter than there are computer symbols however I realized this isn't inclusive of other languages
+        feature.checkForSymbols = function (text) {
+
+            feature.containsSymbol = false;
+
+            for (let i = 0; i < text.length; i++) {
                 for (let j = 0; i < 52; j++) {
-                    if (i === j) {
-                        break;
+                    if (text[i] === feature.letters[j]) {
                     } else {
-                        containsSymbol = true;
+                        feature.containsSymbol = true;
                     };
                 };
             };
+            // returns true if it contains a symbol
+            return feature.containsSymbol;
         };
 
         // checks for valid form submission
         // if any of the boxes is empty alert is sent, otheriwse newComment function called
-        feature.checkComment = function(x, y, z) {
+        feature.checkComment = function (name, email, comment) {
 
-            // check for extra space at beginning of name/comment
-            // check for numbers and special characters in name
-            // check for empty "  " name or comment
-            // check for curse words and censor them with ***
-            // different functions/loops to check for different information to keep in a variable then one form compares that information
-
-            if (x.length === 0 || y.length === 0 || z.length === 0) {
-                
+            // checks if any of the inputs are empty strings or just spaces ie "    "
+            if (name.length === 0 || email.length === 0 || comment.length === 0 || feature.countCharacters(name) === name.length || feature.countCharacters(email) === email.length || feature.countCharacters(comment) === comment.length) {
+                alert("Please complete all boxes");
+                // checks specifically the name for non letter characters to make sure name has no symbols
+            } else if (feature.checkForSymbols(name) === true) {
+                alert("Name should be alphabet letters only");
+                // all is good comment is posted!
             } else {
-                    feature.newComment(x, y, z);
+                feature.newComment(name, email, comment);
             };
         };
-        
+
         // function that creates new comment
-        feature.newComment = function(n, e, c) {
+        feature.newComment = function (name, email, comment) {
             // creates new date instance
             const commentDate = new Date();
             // creates new comment article
@@ -275,15 +279,15 @@
             // fills new comment with name, date and comment information
             newComment.innerHTML = `
                     <div class="textContainer">
-                        <p class="date">${feature.days[commentDate.getDay()]} ${feature.months[commentDate.getMonth()]} ${commentDate.getDate()}${feature.getSuffix(commentDate.getDate())}, ${commentDate.getFullYear()} by ${n}</p>
-                        <p>${c}</p>
+                        <p class="date">${feature.days[commentDate.getDay()]} ${feature.months[commentDate.getMonth()]} ${commentDate.getDate()}${feature.getSuffix(commentDate.getDate())}, ${commentDate.getFullYear()} by ${name}</p>
+                        <p>${comment}</p>
                     </div>`;
             // appending new comment to the page
             document.querySelector('.commentSection').appendChild(newComment);
         };
 
         // init function to start app
-        feature.init = function() {
+        feature.init = function () {
             // creating form event listener that watches for submit
             feature.form.addEventListener('submit', function (e) {
                 // preventing page reload
@@ -299,7 +303,8 @@
 
         // running app
         feature.init();
-    
+
     </script>
 </body>
+
 </html>
